@@ -19,9 +19,17 @@ Most of the clientside functionality operates using the games service.js. This a
 
 6. What optional second argument does the fetch method take? And what is it used for in this application? Hint: See Using Fetch on the MDN docs
 
+It takes an optional init option - containing custom settings that you might also want to apply to the request. i.e. methods (get, put, post etc.) or other headers. Here, it is used for example int he postGame function to make the request post the appropriate json verison of the string sent to it.
+
 
 7. Which of the games API routes does the front-end application consume (i.e. make requests to)?
+Front end uses getGames to display the cards in the grid.
+It also posts requests to add games to this list and deletes them by id.
+
+
 8. What are we using the MongoDB Driver for?
+..allows us to build the api...?
 
 Extension
 9. Why do we need to use ObjectId from the MongoDB driver?
+to produce and work with a complex hex string? 
